@@ -1,0 +1,24 @@
+{
+  "targets": {
+    "encuesta": {
+      "hosting": {
+        "encuesta": [
+          "itsg-encuesta-egresados"
+        ]
+      }
+    },
+    "seguimientoegresado-9bfd9": {
+      "hosting": {
+        "encuesta": [
+          "itsg-encuesta-egresados"
+        ],
+        "jefes": [
+          "seguimientoegresado-9bfd9"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "encuesta": "seguimientoegresado-9bfd9"
+  }
+}

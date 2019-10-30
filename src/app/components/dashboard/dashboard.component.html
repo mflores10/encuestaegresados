@@ -1,0 +1,103 @@
+<div *ngIf="authService.userData as user">
+      <!-- SECCION NAVEGACIÓN-->
+      <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">    
+            <a href="#" class="navbar-brand">
+              <strong>ITSG</strong> Seguimiento a egresados
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false"
+            aria-label="Desplegar menú de navegación">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="menu-principal">
+            <ul class="navbar-nav ml-auto">
+                <!--<li class="nav-item">  <a class="nav-link" (click)="authService.viewPoll()"><i class="fas fa-sign-out-alt"></i>Ver encuesta</a></li>-->
+                <li class="nav-item">  <a class="nav-link" (click)="authService.SignOut()"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a></li>
+            </ul>
+          </div>
+      </nav>
+</div>
+
+<main role="main" class="">
+  <div class="inner-adjust">
+    
+    <div class="row"  >
+      <div class="col-12" *ngIf="hideWhenNoStudent">
+        <app-edit-poll></app-edit-poll>
+      </div>
+    <div class="container">  
+      <div class="row">
+        <div class="col-12" *ngIf="!hideWhenNoStudent">
+          <app-add-poll></app-add-poll>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+  </div>
+</main>
+<!--
+<div *ngIf="authService.userData as user">
+
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow" >
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" routerLink="/register-student">
+          <img class="brand-logo" src="../../../assets/ITSG_LOGO_OFFICIAL.png" alt="positronX.io Logo">
+          <span class="dasboard-text">Encuesta</span>
+        </a>
+        <ul class="navbar-nav px-3">
+          <li class="nav-item text-nowrap dasboard-text">
+            <img class="user-image" src="{{(user.photoURL) ? user.photoURL : '/assets/dummy-user.png'}}"
+            alt="{{user.displayName}}">
+            {{(user.displayName) ? user.displayName : user.email}}
+          </li>
+        </ul>
+      </nav>
+  
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active">
+                  <i class="fas fa-book-open"></i>Encuesta
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" (click)="authService.viewPoll()">
+                    <i class=""></i>Ver Encuestas</a>
+                </li>
+
+              <li class="nav-item">
+                <a class="nav-link" (click)="authService.SignOut()">
+                  <i class="fas fa-sign-out-alt"></i>Cerrar Seccion</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+  
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <div class="inner-adjust">
+      
+
+              
+              <div class="row"  >
+                <div class="col-md-12" *ngIf="hideWhenNoStudent">
+                  <app-edit-poll></app-edit-poll>
+                </div>
+                
+                <div class="col-md-12" *ngIf="!hideWhenNoStudent">
+                    <app-add-poll></app-add-poll>
+                </div>
+
+              </div>
+      
+            </div>
+          </main>
+  
+      </div>
+    </div>
+  </div>
+-->

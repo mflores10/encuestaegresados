@@ -1,0 +1,30 @@
+[debug] [2019-10-30T18:17:21.212Z] ----------------------------------------------------------------------
+[debug] [2019-10-30T18:17:21.215Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Flores\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting:encuesta
+[debug] [2019-10-30T18:17:21.215Z] CLI Version:   7.6.1
+[debug] [2019-10-30T18:17:21.215Z] Platform:      win32
+[debug] [2019-10-30T18:17:21.215Z] Node Version:  v10.15.0
+[debug] [2019-10-30T18:17:21.216Z] Time:          Wed Oct 30 2019 11:17:21 GMT-0700 (GMT-07:00)
+[debug] [2019-10-30T18:17:21.216Z] ----------------------------------------------------------------------
+[debug] [2019-10-30T18:17:21.216Z] 
+[debug] [2019-10-30T18:17:21.229Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-30T18:17:21.230Z] > authorizing via signed-in user
+[debug] [2019-10-30T18:17:21.230Z] [iam] checking project seguimientoegresado-9bfd9 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-10-30T18:17:21.233Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/seguimientoegresado-9bfd9:testIamPermissions  
+
+[debug] [2019-10-30T18:17:21.582Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-30T18:17:21.586Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/seguimientoegresado-9bfd9  
+ 
+[debug] [2019-10-30T18:17:22.527Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'seguimientoegresado-9bfd9'...
+[info] 
+[info] i  deploying hosting
+[info] 
+[info] +  Deploy complete!
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/seguimientoegresado-9bfd9/overview
+[debug] [2019-10-30T18:17:25.698Z] TypeError: Cannot read property 'deploys' of undefined
+    at C:\Users\Flores\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:84:36
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: An unexpected error has occurred.
